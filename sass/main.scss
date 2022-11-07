@@ -6,142 +6,7 @@
 
 /*------area de trabajo-------*/
 
-@media screen and (min-width:0){ /*para movil*/
-    .barra_desktop {
-        display: none;
-    }
-    .regulacion_tamaño{
-        min-width: 288px;
-        width: 90%; 
-        max-width: 380px; 
-    }
-    .titulo_{
-        display: flex;
-    }
-    .barras{
-        background: linear-gradient(
-            181deg,
-            rgba(94, 140, 87, 1) 0%,
-            rgba(181, 253, 129, 1) 47%,
-            rgba(69, 105, 48, 1) 100%
-        );
-    }
-    .barra_movil{
-        display: flex;
-    }
-    .titulo_contendor{
-        width: 215px;
-    }
-    .titulo_contendor h1{
-        font-size: 28px;
-    }
-    .header_inicio h1,.header_inicio h2{
-        font-size: 35px;
-    }
-    .img_inicio{
-        width: 250px;
-    } 
-    .icono_carrito{
-        transform: translate(-45px,-5px);
-    }
-    .barras{
-        height: min-content;  /*EVITANDO ESTILO DE BOOTSTRAP*/
-    }
-    .boton_entrar {
-        padding: 5px 15px;
-        font-size: 18px;
-        display: inline-block;
-    }
-}
-
-@media screen and (min-width:576px){/*para tablet*/
-    .regulacion_tamaño{
-        width:90%;
-        max-width: 600px;
-    }
-    .titulo{
-        display: flex;
-    }
-    .titulo_flex{
-        display: flex;
-    }
-    .titulo_contendor{
-        width: 80%;
-        margin: 10px
-    }
-    .titulo_contendor h1{
-        font-size: 35px;
-    }
-    .header_inicio h1, .header_inicio h2{
-        font-size: 45px;
-    }
-    .img_inicio{
-        width: 450px;
-    }
-    .icono_carrito{
-        transform: translate(0,-5px);
-    }
-    .barras{
-        height: min-content;  /*EVITANDO ESTILO DE BOOTSTRAP*/
-    }
-    .boton_entrar {
-        padding: 10px 20px;
-        font-size: 20px;
-        display: inline-block;
-    }
-}
-
-@media screen and (min-width:992px){/*para desktop*/
-    .regulacion_tamaño{
-        width: 100%;
-        max-width: 900px;
-    }
-    .barra_desktop{
-        display: flex;
-    }
-    .barra_movil{display: none;
-    }
-    .titulo_contendor{
-        width: 700px;
-        font-size: 30px;
-        margin: 10px;
-    }
-    .titulo_contendor h1{
-        font-size: 45px;
-    }
-    .barras{
-        background: transparent;
-    }
-    
-    .header_inicio h1, .header_inicio h2{
-        font-size: 50px;
-    }
-    .img_inicio{
-        width: 600px;
-    }
-    .barras{
-        height: 40px;  /*EVITANDO ESTILO DE BOOTSTRAP*/
-    }
-    .boton_entrar {
-        padding: 5px 25px;
-        font-size: 25px;
-        display: inline-block;
-    }
-}
-
-@media screen and (min-width:1200px){/*para desktop grande*/
-    .regulacion_tamaño{
-        width: 90%;
-        max-width: 1200px;
-    }
-}
-
-.grilla{
-    display: grid;
-    grid-template-columns:  1fr;
-    grid-template-rows: auto 1fr auto;
-    min-height: 100vh;
-}
+@use 'area_trabajo';
 
 /*---------- Estilos gernerales-------------*/
 body{
@@ -268,23 +133,6 @@ h4{
     
 }
 
-/* .header_generico img:hover{
-    box-shadow: rgb(0, 0, 0) 0 3px 5px;
-    transform: translate(0, -2px);
-}
- */
-
-/*  .header_generico img:active{
-    background: linear-gradient(
-        135deg,
-        rgba(203, 139, 0, 0.686) 0%,
-        rgba(255, 200, 0, 0.592) 51%,
-        rgba(255, 170, 0, 0.678) 100%
-    );
-    background-blend-mode: normal;
-    transform: translate(0, 0);
-} */
-
 .barras{
     background-blend-mode: normal;;
     font-size: 22px;
@@ -394,25 +242,6 @@ h4{
     font-family: 'Roboto', sans-serif;  
     font-weight: bold; 
 }
-
-/* .pagina a{
-    color: rgb(247, 247, 247);
-    text-shadow: 1px 1px 2px black;
-} */
-
-/* .barra_movil:hover .desplegable{
-    display: block;
-    opacity: 1;
-	-webkit-animation: scale-in-ver-top 150ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	animation: scale-in-ver-top 150ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-} */
-
-
-
-
-
-
-
 
 
 /*-----------------------botones y sucontenedor-------------------------------------*/
@@ -668,7 +497,6 @@ h4{
         width: 100%;
     }
 }
-
 
 /*----------------registrarse------*/
 .registrarse{
