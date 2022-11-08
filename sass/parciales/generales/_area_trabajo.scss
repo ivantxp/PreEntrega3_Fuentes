@@ -1,3 +1,4 @@
+@use '../generales/variables';
 *{ 
     margin: 0;
     padding: 0;
@@ -14,14 +15,6 @@
     }
     .titulo_{
         display: flex;
-    }
-    .barras{
-        background: linear-gradient(
-            181deg,
-            rgba(94, 140, 87, 1) 0%,
-            rgba(181, 253, 129, 1) 47%,
-            rgba(69, 105, 48, 1) 100%
-        );
     }
     .barra_movil{
         display: flex;
@@ -76,7 +69,7 @@
         width: 450px;
     }
     .icono_carrito{
-        transform: translate(0,-5px);
+        transform: translate(5px,-8px);
     }
     .barras{
         height: min-content;  /*EVITANDO ESTILO DE BOOTSTRAP*/

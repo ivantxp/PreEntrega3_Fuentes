@@ -1,47 +1,23 @@
-/*confuguraciones generales---------------*/
-
+/*---confuguraciones generales---------------*/
 @use './parciales/generales/area_trabajo';
-
-/*---------- Estilos gernerales-------------*/
-
+/*---Estilos gernerales-------------*/
 @use './parciales/generales/globales';
-
-/*-----------header para todo menos index-------*/
+/*---header para todo menos index-------*/
 @use './parciales/componentes/header_generico.scss';
-
-/*-----------------------botones y sucontenedor-------------------------------------*/
-
+/*---botones y sucontenedor-------------------------------------*/
 @use './parciales/componentes/contenedores';
-
 @use './parciales/componentes/botones';
-
-
-
-
-/*----------------pagina de indicio(index)------------*/
-
+/*---pagina de indicio(index)------------*/
 @use './parciales/paginasen_en_scss/inicio.scss';
-
-
-
-/*------------pagina-principal y pagina comida/pedidos-----------------------*/
-
+/*---pagina-principal y pagina comida/pedidos-----------------------*/
 @use './parciales/paginasen_en_scss/principa_y_comidas';
-
-/*---------nosotros----------*/
+/*---nosotros----------*/
 @use './parciales/paginasen_en_scss/nosotros.scss';
-
-
-/*----------------registrarse------*/
+/*---registrarse------*/
 @use './parciales/paginasen_en_scss/registrarse';
-
-/*---------------ingresar-------------*/
+/*---ingresar-------------*/
 @use './parciales/paginasen_en_scss/ingresar';
-
-
-/*----------pagina carrito---*/
+/*---pagina carrito---*/
 @use './parciales/paginasen_en_scss/carrito';
-
-
-/*---------Footer-------*/
+/*---Footer-------*/
 @use './parciales/componentes/footer';

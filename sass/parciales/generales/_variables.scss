@@ -1,0 +1,27 @@
+$color_a:#5b06aa;
+
+$color_titulo_nosotros:#1b8514;
+
+$color_titulo_hover:#ffa909;
+
+$color_titulo_active:#ffdea0;
+
+$footer_color:#7fffd4;
+
+$footer_color_hover:#00ff9d;
+
+$footer_color_active:#6dffc7;
+
+
+
+%color_boton_hover{
+    background: linear-gradient(
+            0deg,
+            rgb(43, 253, 96) 0%,
+            rgb(196, 255, 211) 48%,
+            rgb(49, 255, 100) 100%
+        );
+        color: rgb(255, 255, 255);
+        box-shadow: rgb(0, 0, 0) 0 3px 5px;
+/*         transform: translate(0,-22px) *//*estose deja en el jover de boton*/
+}

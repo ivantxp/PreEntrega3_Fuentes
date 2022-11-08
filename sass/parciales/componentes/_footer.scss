@@ -1,20 +1,21 @@
+@use '../generales/variables';
 
 .redes_sociales{
     display: flex;
     justify-content:center;  
-    background-color: rgb(127, 255, 212);
+    background-color: variables.$footer_color;
     align-items: flex-end;
     margin: 15px 0 0 0;
     img{ 
-        border: 2px solid rgb(127, 255, 212);
+        border: 2px solid variables.$footer_color;
         &:hover{
-            background-color: rgb(0, 255, 157);
+            background-color: variables.$footer_color_hover;
             border: 2px solid black;
             box-shadow: rgb(0, 0, 0) 0 3px 5px;
             transform: translate(0, -2px);
         }
         &:active{
-            background-color: rgb(109, 255, 199);
+            background-color: variables.$footer_color_active;
             box-shadow: rgb(0, 0, 0) 0 3px 5px;
             transform: translate(0, 0);
         }
