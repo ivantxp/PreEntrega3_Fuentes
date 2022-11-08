@@ -1,0 +1,47 @@
+
+.registrarse{
+    width: 90%;
+    max-width: 650px;
+}
+.formato_input{ 
+    width: 75%;
+    max-width: 350px;
+    height: 30px;
+    border-radius:5px;
+}
+
+.enviar_pedido{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    margin: 10px 0 0 0;
+}
+
+.chequeo{
+    display: flex;
+    padding: 0 auto;
+    justify-content: center;
+    max-width: 90%;
+    font-size: 14px;
+    text-align: none;
+}
+
+.enviar_reset{
+    width: 45%;
+    max-width: 150px;
+    height: 30px;
+    border-radius:5px;
+}
+
+.check{
+    margin: auto 10px;
+}
+.comentario{
+    display: flex;
+    justify-content: center;
+    resize: none;
+    width: 90%;
+    height: 150px;
+    border-radius: 5px;
+    margin: 10px auto;
+}
