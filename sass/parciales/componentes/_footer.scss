@@ -3,7 +3,7 @@
 .redes_sociales{
     display: flex;
     justify-content:center;  
-    background-color: variables.$footer_color_color;
+    background-color: map-get($footer_color, general);
     align-items: flex-end;
     margin: 15px 0 0 0;
     img{ 

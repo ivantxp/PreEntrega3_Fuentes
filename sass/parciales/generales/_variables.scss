@@ -7,16 +7,25 @@ $color_titulo_hover:#ffa909;
 $color_titulo_active:#ffdea0;
 
 
-/* $footer_color:(
+
+$footer_color:(
     general:rgb(127, 255, 212),
     hover:rgb(0, 255, 157),
     active:rgb(109, 255, 199),
     sombra:rgb(0, 0, 0)
-); */
+); 
+ 
+
+
+
+
+
+
+/* 
 $footer_color_color:rgb(127, 255, 212);
 $footer_color_hover:(0, 255, 157);
 $footer_color_active:rgb(109, 255, 199);
-$footer_color_sombra:rgb(0, 0, 0);
+$footer_color_sombra:rgb(0, 0, 0); */
 
 %color_boton_hover{ /*propiedades para botones en hover*/
     background: linear-gradient(
