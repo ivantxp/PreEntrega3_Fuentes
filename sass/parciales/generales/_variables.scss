@@ -1,4 +1,4 @@
-$color_a:#5b06aa;
+$color_a:#7d0bae;
 
 $color_titulo_nosotros:#1b8514;
 
@@ -6,15 +6,19 @@ $color_titulo_hover:#ffa909;
 
 $color_titulo_active:#ffdea0;
 
-$footer_color:#7fffd4;
 
-$footer_color_hover:#00ff9d;
+/* $footer_color:(
+    general:rgb(127, 255, 212),
+    hover:rgb(0, 255, 157),
+    active:rgb(109, 255, 199),
+    sombra:rgb(0, 0, 0)
+); */
+$footer_color_color:rgb(127, 255, 212);
+$footer_color_hover:(0, 255, 157);
+$footer_color_active:rgb(109, 255, 199);
+$footer_color_sombra:rgb(0, 0, 0);
 
-$footer_color_active:#6dffc7;
-
-
-
-%color_boton_hover{
+%color_boton_hover{ /*propiedades para botones en hover*/
     background: linear-gradient(
             0deg,
             rgb(43, 253, 96) 0%,
@@ -23,5 +27,15 @@ $footer_color_active:#6dffc7;
         );
         color: rgb(255, 255, 255);
         box-shadow: rgb(0, 0, 0) 0 3px 5px;
-/*         transform: translate(0,-22px) *//*estose deja en el jover de boton*/
+}
+
+%color_boton_active{/*propiedades para botones enactive */
+    color: black;
+    background: linear-gradient(
+        0deg,
+        rgb(43, 253, 96) 0%,
+        rgb(0, 65, 22) 48%,
+        hwb(135 19% 0%) 100%
+    );
+    color: rgb(190, 255, 190);
 }

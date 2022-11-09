@@ -17,18 +17,12 @@
     &:hover {
         @extend %color_boton_hover;
         transform: translate(0,-22px) 
+        /*box-shadow escrito en _variables.scss*/
     }
     &:active{
         transform: translate(0,-20px);
         box-shadow: none;
-        color: black;
-        background: linear-gradient(
-            0deg,
-            rgb(43, 253, 96) 0%,
-            rgb(0, 65, 22) 48%,
-            rgb(49, 255, 100) 100%
-        );
-        color: rgb(190, 255, 190);
+        @extend %color_boton_active;
     }
 }
 

@@ -3,20 +3,20 @@
 .redes_sociales{
     display: flex;
     justify-content:center;  
-    background-color: variables.$footer_color;
+    background-color: variables.$footer_color_color;
     align-items: flex-end;
     margin: 15px 0 0 0;
     img{ 
-        border: 2px solid variables.$footer_color;
+        border: 2px solid variables.$footer_color_color;
         &:hover{
             background-color: variables.$footer_color_hover;
             border: 2px solid black;
-            box-shadow: rgb(0, 0, 0) 0 3px 5px;
+            box-shadow: /* map-get($footer_color, sombra) */ 0 3px 5px;
             transform: translate(0, -2px);
         }
         &:active{
-            background-color: variables.$footer_color_active;
-            box-shadow: rgb(0, 0, 0) 0 3px 5px;
+            background-color: /* map-get($footer_color, active) */ variables.$footer_color_active;
+            box-shadow: /* map-get($footer_color, sombra) */ variables.$footer_color_sombra 0 3px 5px;
             transform: translate(0, 0);
         }
     }

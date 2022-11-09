@@ -1,3 +1,4 @@
+@use '../generales/variables';
 
 .header_generico{ /*contenido total del header*/
     position: sticky;
@@ -54,59 +55,65 @@
             rgba(181, 253, 129, 1) 47%,
             rgba(69, 105, 48, 1) 100%
         );
-        .barra_movil{/*barra para vista movil y tablet*/
-            width:min-content;
-            height: 40px;
-            transition: 150ms;
-            .desplegable{
-                display: none;
-                position: absolute;
-                cursor: pointer;
-                padding: 0 5px;    
-            }
-            &:hover .desplegable{
-                display: block;
-                opacity: 1;
-                -webkit-animation: scale-in-ver-top 150ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-                animation: scale-in-ver-top 150ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-            }
-            @keyframes scale-in-ver-top {
-                0% {
-                    -webkit-transform: scaleY(0);
-                    transform: scaleY(0);
-                    -webkit-transform-origin: 100% 0%;
-                    transform-origin: 100% 0%;
-                    opacity: 1;
+        div{   
+            .barra_movil{/*barra para vista movil y tablet*/
+                width:min-content;
+                height: 40px;
+                transition: 150ms;
+                .desplegable{
+                    display: none;
+                    position: absolute;
+                    cursor: pointer;
+                    padding: 0 5px;    
                 }
-                100% {
-                    -webkit-transform: scaleY(1);
-                    transform: scaleY(1);
-                    -webkit-transform-origin: 100% 0%;  
-                    transform-origin: 100% 0%;
+                &:hover .desplegable{
+                    display: block;
                     opacity: 1;
+                    -webkit-animation: scale-in-ver-top 150ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                    animation: scale-in-ver-top 150ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
                 }
-            }
-            .menu{
-                display:flex;
-                padding: 5px 10px;
-                background: linear-gradient(
-                    0deg,
-                    rgba(163, 0, 0, 1) 0%,
-                    rgba(255, 171, 171, 1) 51%,
-                    rgba(255, 0, 0, 1) 100%
-                );
-                background-blend-mode: normal;
-                height: 100%;
-            } 
-            div{
-                .pagina {
-                    padding: 5px 0 0 5px;
-                    a{
-                        color: rgb(247, 247, 247);
-                        text-shadow: 1px 1px 2px black;
+                
+
+                @keyframes scale-in-ver-top { /*animacion de desplegable*/
+                    0% {
+                        -webkit-transform: scaleY(0);
+                        transform: scaleY(0);
+                        -webkit-transform-origin: 100% 0%;
+                        transform-origin: 100% 0%;
+                        opacity: 1;
+                    }
+                    100% {
+                        -webkit-transform: scaleY(1);
+                        transform: scaleY(1);
+                        -webkit-transform-origin: 100% 0%;  
+                        transform-origin: 100% 0%;
+                        opacity: 1;
                     }
                 }
-            }
+                .menu{
+                    display:flex;
+                    padding: 5px 10px;
+                    background: linear-gradient(
+                        0deg,
+                        rgba(163, 0, 0, 1) 0%,
+                        rgba(255, 171, 171, 1) 51%,
+                        rgba(255, 0, 0, 1) 100%
+                    );
+                    background-blend-mode: normal;
+                    height: 100%;
+                } 
+                div{
+                    .pagina{
+                        padding: 5px 0 0 5px;
+                        color: rgb(247, 247, 247);
+                        text-shadow: 1px 1px 2px black;
+                        &:hover{
+                            color:variables.$color_titulo_hover
+                        }       
+                    }
+
+                }
+            }   
         }
         .barra_movil_animacion_a:hover{
             cursor:pointer;
