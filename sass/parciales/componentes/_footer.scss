@@ -3,21 +3,21 @@
 .redes_sociales{
     display: flex;
     justify-content:center;  
-    background-color: map-get($footer_color, general);
+    background-color: map-get(variables.$footer_color, general); 
     align-items: flex-end;
-    margin: 15px 0 0 0;
+    margin: 15px 0 0 0;  
     img{ 
-        border: 2px solid variables.$footer_color_color;
+        border: 2px solid map-get(variables.$footer_color, general);
         &:hover{
-            background-color: variables.$footer_color_hover;
+            background-color: map-get(variables.$footer_color, hover);
             border: 2px solid black;
-            box-shadow: /* map-get($footer_color, sombra) */ 0 3px 5px;
+            box-shadow: map-get(variables.$footer_color, sombra) 0 3px 5px;
             transform: translate(0, -2px);
         }
         &:active{
-            background-color: /* map-get($footer_color, active) */ variables.$footer_color_active;
-            box-shadow: /* map-get($footer_color, sombra) */ variables.$footer_color_sombra 0 3px 5px;
+            background-color: map-get(variables.$footer_color, active);
+            box-shadow: map-get(variables.$footer_color, sombra) 0 3px 5px;
             transform: translate(0, 0);
         }
     }
-}
+} 
