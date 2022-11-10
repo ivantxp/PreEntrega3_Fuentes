@@ -1,3 +1,8 @@
+/*colores sueltos*/
+$comida_fondo:rgb(255, 223, 159);
+$color_seleccionado:rgb(255, 255, 255);
+$pagina_seleccionada_letra:rgb(255, 255, 255);
+$color_info:rgb(255, 255, 255);
 
 $titulo_color:(
     general:rgb(125, 11, 174),
@@ -6,8 +11,6 @@ $titulo_color:(
     nosotros:rgb(27, 133, 20)
 ); 
 
-$color_seleccionado:rgb(255, 255, 255);
-$pagina_font:rgb(255, 255, 255);
 $footer_color:(
     general:rgb(127, 255, 212),
     hover:rgb(0, 255, 157),
@@ -15,7 +18,19 @@ $footer_color:(
     sombra:rgb(0, 0, 0)
 ); 
 
+$boton_color:(
+    letra: rgb(250, 126, 81),
+    fondo:rgb(130, 238, 157)
+);
+/*Estilos letra*/
+/* map-get(variables.$estilo_letra, loguin) */
+$estilo_letra:(
+    titulos:('Permanent Marker', cursive),
+    parrafos:('Nunito', sans-serif),
+    loguin:('Roboto', sans-serif));
+
 /*gradientes generales*/
+
 %active_carrito{
     background: linear-gradient(
         135deg,
@@ -76,3 +91,6 @@ $footer_color:(
     );
     background-blend-mode: normal;
 }
+
+
+

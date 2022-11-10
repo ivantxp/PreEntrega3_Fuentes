@@ -1,13 +1,13 @@
 @use '../generales/variables';
 
 .boton_formato{
-    font-family: 'Roboto', sans-serif;
+    font-family: map-get(variables.$estilo_letra, loguin);
     text-align: center;
     border-radius: 10px;
     font-weight:bold;
-    color: rgb(250, 126, 81);
+    color: map-get(variables.$boton_color, letra);
     transform: translate(0,-20px);
-    background-color: rgb(130, 238, 157);
+    background-color: map-get(variables.$boton_color, fondo);
     cursor: pointer;
     box-shadow: none;
     transition:     

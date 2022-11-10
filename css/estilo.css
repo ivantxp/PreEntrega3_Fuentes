@@ -1,4 +1,7 @@
 @charset "UTF-8";
+/*colores sueltos*/
+/*Estilos letra*/
+/* map-get(variables.$estilo_letra, loguin) */
 /*gradientes generales*/
 .header_generico .header_superior img:active {
   background: linear-gradient(135deg, rgba(203, 139, 0, 0.686) 0%, rgba(255, 200, 0, 0.592) 51%, rgba(255, 170, 0, 0.678) 100%);
@@ -465,18 +468,20 @@ h4 {
   align-self: center;
 }
 
-.header_inicio {
-  font-family: "Permanent Marker", cursive;
+header .header_inicio {
   text-align: center;
   display: block;
   margin: 3% 0 2% 0;
+}
+header .header_inicio h1 {
+  font-family: "Permanent Marker", cursive;
 }
 
 .main_inicio div {
   display: flex;
   justify-content: center;
 }
-.main_inicio .img {
+.main_inicio div .img_inicio {
   border-radius: 10px;
   justify-content: center;
 }

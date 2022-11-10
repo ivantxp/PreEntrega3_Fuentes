@@ -37,7 +37,7 @@
         flex-direction: column;
         justify-content: center;
         font-size: 17px ;
-        font-family: 'Roboto', sans-serif;  
+        font-family: map-get(variables.$estilo_letra, loguin);  
         font-weight: bold; 
     }
     .barras{ /*todo lo relacionado con barras de navegacion*/
@@ -86,7 +86,7 @@
                 div{
                     .pagina{
                         padding: 5px 0 0 5px;
-                        color: variables.$pagina_font;
+                        color: variables.$pagina_seleccionada_letra;
                         text-shadow: 1px 1px 2px black;
                         &:hover{
                             color:map-get(variables.$titulo_color, hover);
