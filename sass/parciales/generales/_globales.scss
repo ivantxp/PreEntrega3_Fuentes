@@ -33,7 +33,7 @@ p{
 }
 
 h4{
-    color: variables.$color_titulo_nosotros;
+    color: map-get(variables.$titulo_color, nosotros);
     margin: 20px 0 0 0;
     font-family: 'Permanent Marker', cursive;
     font-size: 20px;
@@ -47,12 +47,12 @@ h4{
 .titulo_animacion{
     transition: text-shadow 100ms ease 0s, color 100ms ease 0s;
     &:hover{
-        color: variables.$color_titulo_hover;
+        color: map-get(variables.$titulo_color, hover);
         text-shadow: 1px 1px 2px black;
         text-decoration-line:none ; /*EVITANDO ESTILO DE BOOTSTRAP*/
     }
     &:active{
-        color: variables.$color_titulo_active;
+        color: map-get(variables.$titulo_color, active);
         text-shadow: none;
     }
 }
