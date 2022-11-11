@@ -1,29 +1,22 @@
-
+@use '../generales/variables';
 
 .bordes_divisorios{
-    border: 2px solid rgb(250, 13, 13);
+    border: 2px solid variables.$color_borde;
     padding: 50px 10px 20px 10px;
     border-radius: 10px;
     margin: 0 10px 0 10px;
     box-shadow:  3px 3px 5px black;
-    background: linear-gradient(
-        45deg,
-        rgba(155, 235, 131, 1) 0%,
-        rgba(204, 255, 189, 0.79) 31%,
-        rgba(206, 255, 191, 1) 68%,
-        rgba(133, 204, 144, 1) 100%
-    );
-    background-blend-mode: normal;
+    @extend %color_fondo_caja;
 }
 
 .borde_titulo{
     transform: translate(30px, 25px);
-    border: 2px solid rgb(253, 10, 10);
+    border: 2px solid variables.$color_borde;;
     width: -moz-fit-content;
     width: fit-content;
     padding: 5px 15px;
     border-radius: 10px;
-    background-color: aliceblue;
+    background-color: variables.$colo_fondo_caja;
     box-shadow:  3px 3px 5px black;
     font-size: 25px;
     overflow-wrap: break-word;

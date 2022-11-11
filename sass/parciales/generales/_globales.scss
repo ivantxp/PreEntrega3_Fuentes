@@ -6,15 +6,9 @@ body{
     background-size:cover ;
     overflow-y: none;
 }
-.borde_titulo_centrado{
-    transform: translate(0, 30px);
-}
+
 main{
     width: 100%;
-}
-
-.borde_titulo_centrado{
-    transform: translate(0, 30px);
 }
 
 a{
@@ -26,7 +20,7 @@ h2{
     font-size: 40px;
 }
 
-ul, h3{
+ul, h3,.titulo_menu{
     list-style: none;
     font-family: map-get(variables.$estilo_letra, titulos);
     font-size: 22px;
@@ -38,7 +32,7 @@ p{
     text-align: justify;
 }
 
-h4{
+.titulo_nosotros{
     color: map-get(variables.$titulo_color, nosotros);
     margin: 20px 0 0 0;
     font-family: map-get(variables.$estilo_letra, titulos);
@@ -52,6 +46,10 @@ h4{
 .titulo{
     color:  map-get(variables.$titulo_color, general);
     font-family:map-get(variables.$estilo_letra, titulos);
+}
+
+.borde_titulo_centrado{
+    transform: translate(0, 25px);
 }
 
 .titulo_animacion{

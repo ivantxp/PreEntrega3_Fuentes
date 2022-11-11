@@ -1,8 +1,11 @@
 /*colores sueltos*/
+/*aun que sean los mismos colores algunas variables lo dejo asi por si se queire cambiar el color de alguna elemnto se puede hacer mas rapido*/
 $comida_fondo:rgb(255, 223, 159);
-$color_seleccionado:rgb(255, 255, 255);
+$color_seleccionado:rgb(255, 255, 255); 
 $pagina_seleccionada_letra:rgb(255, 255, 255);
 $color_info:rgb(255, 255, 255);
+$color_borde:rgb(250, 13, 13);
+$colo_fondo_caja: rgb(237, 244, 250);
 
 $titulo_color:(
     general:rgb(125, 11, 174),
@@ -92,5 +95,15 @@ $estilo_letra:(
     background-blend-mode: normal;
 }
 
+%color_fondo_caja{
+    background: linear-gradient(
+        45deg,
+        rgba(155, 235, 131, 1) 0%,
+        rgba(204, 255, 189, 0.79) 31%,
+        rgba(206, 255, 191, 1) 68%,
+        rgba(133, 204, 144, 1) 100%
+    );
+    background-blend-mode: normal;
+}
 
 

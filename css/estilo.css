@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /*colores sueltos*/
+/*aun que sean los mismos colores algunas variables lo dejo asi por si se queire cambiar el color de alguna elemnto se puede hacer mas rapido*/
 /*Estilos letra*/
 /* map-get(variables.$estilo_letra, loguin) */
 /*gradientes generales*/
@@ -31,6 +32,11 @@
 
 .header_generico .barras .barra_desktop .pestaña:hover {
   background: linear-gradient(181deg, rgb(94, 140, 87) 0%, rgb(96, 172, 42) 47%, rgb(69, 105, 48) 100%);
+  background-blend-mode: normal;
+}
+
+.bordes_divisorios {
+  background: linear-gradient(45deg, rgb(155, 235, 131) 0%, rgba(204, 255, 189, 0.79) 31%, rgb(206, 255, 191) 68%, rgb(133, 204, 144) 100%);
   background-blend-mode: normal;
 }
 
@@ -280,6 +286,28 @@
   align-self: stretch;
 }
 
+.redes_sociales {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(127, 255, 212);
+  align-items: flex-end;
+  margin: 15px 0 0 0;
+}
+.redes_sociales img {
+  border: 2px solid rgb(127, 255, 212);
+}
+.redes_sociales img:hover {
+  background-color: rgb(0, 255, 157);
+  border: 2px solid black;
+  box-shadow: rgb(0, 0, 0) 0 3px 5px;
+  transform: translate(0, -2px);
+}
+.redes_sociales img:active {
+  background-color: rgb(109, 255, 199);
+  box-shadow: rgb(0, 0, 0) 0 3px 5px;
+  transform: translate(0, 0);
+}
+
 .contenedores {
   display: flex;
   flex-direction: column;
@@ -406,18 +434,16 @@
   border-radius: 10px;
   margin: 0 10px 0 10px;
   box-shadow: 3px 3px 5px black;
-  background: linear-gradient(45deg, rgb(155, 235, 131) 0%, rgba(204, 255, 189, 0.79) 31%, rgb(206, 255, 191) 68%, rgb(133, 204, 144) 100%);
-  background-blend-mode: normal;
 }
 
 .borde_titulo {
   transform: translate(30px, 25px);
-  border: 2px solid rgb(253, 10, 10);
+  border: 2px solid rgb(250, 13, 13);
   width: -moz-fit-content;
   width: fit-content;
   padding: 5px 15px;
   border-radius: 10px;
-  background-color: aliceblue;
+  background-color: rgb(237, 244, 250);
   box-shadow: 3px 3px 5px black;
   font-size: 25px;
   overflow-wrap: break-word;
@@ -443,14 +469,14 @@ header .header_inicio h1 {
 
 .promo_take {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .milanesa_semana {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
 }
 
 .milanesa_semana h2 {
@@ -521,44 +547,20 @@ header .header_inicio h1 {
   border-radius: 5px;
 }
 
-.ingresar_margen {
-  margin: 100px auto 0;
-}
-
-.caja_ingresar {
-  padding: 50px 20px 40px 20px;
-}
-
 .centrado_paquete {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+.centrado_paquete .ingresar_margen {
+  margin: 100px auto 0;
+}
+.centrado_paquete .caja_ingresar {
+  padding: 50px 20px 40px 20px;
+}
 
 .carrito {
   margin: 0 auto;
-}
-
-.redes_sociales {
-  display: flex;
-  justify-content: center;
-  background-color: rgb(127, 255, 212);
-  align-items: flex-end;
-  margin: 15px 0 0 0;
-}
-.redes_sociales img {
-  border: 2px solid rgb(127, 255, 212);
-}
-.redes_sociales img:hover {
-  background-color: rgb(0, 255, 157);
-  border: 2px solid black;
-  box-shadow: rgb(0, 0, 0) 0 3px 5px;
-  transform: translate(0, -2px);
-}
-.redes_sociales img:active {
-  background-color: rgb(109, 255, 199);
-  box-shadow: rgb(0, 0, 0) 0 3px 5px;
-  transform: translate(0, 0);
 }
 
 body {
@@ -568,16 +570,8 @@ body {
   overflow-y: none;
 }
 
-.borde_titulo_centrado {
-  transform: translate(0, 30px);
-}
-
 main {
   width: 100%;
-}
-
-.borde_titulo_centrado {
-  transform: translate(0, 30px);
 }
 
 a {
@@ -589,7 +583,7 @@ h2 {
   font-size: 40px;
 }
 
-ul, h3 {
+ul, h3, .titulo_menu {
   list-style: none;
   font-family: "Permanent Marker", cursive;
   font-size: 22px;
@@ -601,7 +595,7 @@ p {
   text-align: justify;
 }
 
-h4 {
+.titulo_nosotros {
   color: rgb(27, 133, 20);
   margin: 20px 0 0 0;
   font-family: "Permanent Marker", cursive;
@@ -615,6 +609,10 @@ h4 {
 .titulo {
   color: rgb(125, 11, 174);
   font-family: "Permanent Marker", cursive;
+}
+
+.borde_titulo_centrado {
+  transform: translate(0, 25px);
 }
 
 .titulo_animacion {
@@ -643,14 +641,14 @@ h4 {
 
 /*---confuguraciones generales---------------*/
 /*---header para todo menos index-------*/
-/*---botones y sucontenedor-------------------------------------*/
+/*---Footer-------*/
+/*---componentes-------------------------------------*/
 /*---pagina de indicio(index)------------*/
 /*---pagina-principal y pagina comida/pedidos-----------------------*/
 /*---nosotros----------*/
 /*---registrarse------*/
 /*---ingresar-------------*/
 /*---pagina carrito---*/
-/*---Footer-------*/
 /*---Estilos gernerales-------------*/
 
 /*# sourceMappingURL=estilo.css.map */

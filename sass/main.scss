@@ -1,14 +1,15 @@
 
+
 /*---confuguraciones generales---------------*/
 @use './parciales/generales/area_trabajo';
 /*---header para todo menos index-------*/
 @use './parciales/componentes/header_generico.scss';
-/*---botones y sucontenedor-------------------------------------*/
+/*---Footer-------*/
+@use './parciales/componentes/footer';
+/*---componentes-------------------------------------*/
 @use './parciales/componentes/contenedores';
 @use './parciales/componentes/botones';
-
 @use './parciales/componentes/bordes';
-
 
 /*---pagina de indicio(index)------------*/
 @use './parciales/paginasen_en_scss/inicio.scss';
@@ -22,7 +23,6 @@
 @use './parciales/paginasen_en_scss/ingresar';
 /*---pagina carrito---*/
 @use './parciales/paginasen_en_scss/carrito';
-/*---Footer-------*/
-@use './parciales/componentes/footer';
+
 /*---Estilos gernerales-------------*/
 @use './parciales/generales/globales';
