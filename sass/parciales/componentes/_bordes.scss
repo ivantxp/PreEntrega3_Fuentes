@@ -1,4 +1,5 @@
 @use '../generales/variables';
+@use '../generales/extend';
 
 .bordes_divisorios{
     border: 2px solid variables.$color_borde;

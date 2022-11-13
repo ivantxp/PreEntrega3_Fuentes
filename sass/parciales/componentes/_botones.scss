@@ -1,13 +1,13 @@
 @use '../generales/variables';
+@use '../generales/extend';
 
 .boton_formato{
+    color: map-get(variables.$boton_color, letra);
     font-family: map-get(variables.$estilo_letra, loguin);
     text-align: center;
     border-radius: 10px;
     font-weight:bold;
-    color: map-get(variables.$boton_color, letra);
     transform: translate(0,-20px);
-    background-color: map-get(variables.$boton_color, fondo);
     cursor: pointer;
     box-shadow: none;
     transition:     
@@ -15,10 +15,19 @@
         background-color 100ms ease 0s, 
         color 100ms ease 0s,
         box-shadow 100ms ease 0s;
+}
+
+.boton_contenedores {
+    padding: 10px 15px ;
+    font-size: 18px;
+    align-self: center;
+}
+
+.boton_entrar, .boton_contenedores{
+    background-color: map-get(variables.$boton_color, fondo);
     &:hover {
         @extend %color_boton_hover;
-        transform: translate(0,-22px) 
-        /*box-shadow escrito en _variables.scss*/
+        transform: translate(0,-24px);
     }
     &:active{
         transform: translate(0,-20px);
@@ -27,15 +36,24 @@
     }
 }
 
-
-.boton_contenedores {
-    padding: 10px 15px ;
-    font-size: 18px;
-    align-self: center;
+.boton_enviar{
+    color: map-get(variables.$boton_color, letra2 );
+    font-size: 15px;    align-self: center;
+    transform: translate(0,0);
+    @extend %color_boton_hover_enviar;
+    &:hover {
+        @extend %color_boton_hover;
+        transform: translate(0,-4px) 
+    }
+    &:active{
+        transform: translate(0,-0px);
+        box-shadow: none;
+        @extend %color_boton_active;
+    }
 }
 
-.boton_contenedores {
-    padding: 10px 15px ;
+/* .boton_entrar {
+    padding: 5px 15px;
     font-size: 18px;
-    align-self: center;
-}
+    display: inline-block;
+} */
