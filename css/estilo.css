@@ -183,7 +183,7 @@
   flex-direction: column;
   justify-content: space-between;
   z-index: 100;
-  background-image: url(../imagenes/fondo.webp);
+  background-image: url(../imagenes/fondo.JPG);
   background-repeat: repeat;
   background-size: 200px;
   font-size: 16px;
@@ -359,7 +359,7 @@
   display: block;
   color: rgb(0, 0, 0);
   border-radius: 0 5px 0 0;
-  width: 200px;
+  width: 230px;
 }
 .contenedores div .info_animacion:active .informacion_milanesa {
   display: block;
@@ -386,8 +386,8 @@
 .contenedores div .info_animacion .informacion_milanesa { /*deberia in*/
   display: none;
   position: absolute;
-  width: 200px;
-  padding: 0 0 0 5px;
+  width: 230px;
+  padding: 0 5px 0 5px;
   background-color: rgb(255, 255, 255);
   margin: 36px 0 0 0;
   opacity: 0.9;
@@ -398,7 +398,7 @@
 }
 .contenedores img {
   border-radius: 0 10px 10px;
-  width: 220px;
+  width: 230px;
   height: 200px;
 }
 
@@ -518,12 +518,36 @@ header .header_inicio h1 {
 }
 
 .comiensa, .segunda {
-  width: 95%;
-  max-width: 900px;
+  width: 90%;
+  max-width: 1200px;
 }
 .comiensa img, .segunda img {
   border-radius: 10px;
-  width: 100%;
+  /* width: 100%; */
+}
+@media screen and (min-width: 320px) {
+  .comiensa img, .segunda img { /*vista movil*/
+    width: 230px;
+    height: 200px;
+  }
+}
+@media screen and (min-width: 576px) {
+  .comiensa img, .segunda img { /*vista movil*/
+    width: 400px;
+    height: 350px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .comiensa img, .segunda img { /*vista movil*/
+    width: 700px;
+    height: 450px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .comiensa img, .segunda img { /*vista movil*/
+    width: 800px;
+    height: 700px;
+  }
 }
 
 .registrarse {
@@ -627,7 +651,7 @@ header .header_inicio h1 {
 }
 
 body {
-  background-image: url(../imagenes/fondococina.webp);
+  background-image: url(../../../imagenes/fondococina.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   overflow-y: none;
