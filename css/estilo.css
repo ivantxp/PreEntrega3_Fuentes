@@ -674,7 +674,7 @@ main {
 
 a {
   text-decoration: none;
-  color: rgb(125, 11, 174);
+  color: red;
 }
 
 h2 {
@@ -705,7 +705,7 @@ p {
 }
 
 .titulo {
-  color: rgb(125, 11, 174);
+  color: red;
   font-family: "Permanent Marker", cursive;
 }
 
