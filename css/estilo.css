@@ -29,7 +29,10 @@
   .titulo_contendor h1 {
     font-size: 28px;
   }
-  .header_inicio h1, .header_inicio h2 {
+  .header_inicio {
+    padding: 150px 0 10px 0;
+  }
+  .header_inicio h1 {
     font-size: 35px;
   }
   .img_inicio {
@@ -65,7 +68,10 @@
   .titulo_contendor h1 {
     font-size: 35px;
   }
-  .header_inicio h1, .header_inicio h2 {
+  .header_inicio {
+    padding: 100px 0 5px 0;
+  }
+  .header_inicio h1 {
     font-size: 45px;
   }
   .img_inicio {
@@ -105,7 +111,10 @@
   .barras {
     background: transparent;
   }
-  .header_inicio h1, .header_inicio h2 {
+  .header_inicio {
+    padding: 50px 0 0 0;
+  }
+  .header_inicio h1 {
     font-size: 50px;
   }
   .img_inicio {
