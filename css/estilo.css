@@ -194,7 +194,7 @@
   z-index: 100;
   /*     background-image: url(../imagenes/fondo.JPG);
    */
-  background-image: url(../../../imagenes/fondo.jpg);
+  background-image: url("../../../imagenes/fondo.jpg");
   background-repeat: repeat;
   background-size: 200px;
   font-size: 16px;
@@ -662,7 +662,7 @@ header .header_inicio h1 {
 }
 
 body {
-  background-image: url(../../../imagenes/fondococina.jpg);
+  background-image: url("../../../imagenes/fondococina.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   overflow-y: none;
