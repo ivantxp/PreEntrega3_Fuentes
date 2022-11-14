@@ -32,12 +32,15 @@
                 border-radius: 5px;
                 margin: 10px auto;
             }  
-            div{
+            .tipo_envio{
                 div{
-                    width: 170px;
+                    width: 160px;
                     margin: 0 auto;
                     display: flex;
                     justify-content: space-evenly;
+                    input{
+                        margin:0 0 0 2px; 
+                    }
                 }
             }
             .enviar_pedido{
@@ -47,7 +50,7 @@
                 margin: 10px 0 0 0;
                 .enviar_reset{
                     width: 45%;
-                    max-width: 150px;
+                    max-width: 160px;
                     height: 30px;
                     border-radius:5px;
                 }

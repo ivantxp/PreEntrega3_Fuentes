@@ -30,7 +30,7 @@
     font-size: 28px;
   }
   .header_inicio {
-    padding: 150px 0 10px 0;
+    padding: 100px 0 10px 0;
   }
   .header_inicio h1 {
     font-size: 35px;
@@ -69,7 +69,7 @@
     font-size: 35px;
   }
   .header_inicio {
-    padding: 100px 0 5px 0;
+    padding: 50px 0 5px 0;
   }
   .header_inicio h1 {
     font-size: 45px;
@@ -112,7 +112,7 @@
     background: transparent;
   }
   .header_inicio {
-    padding: 50px 0 0 0;
+    padding: 0;
   }
   .header_inicio h1 {
     font-size: 50px;
@@ -576,23 +576,25 @@ header .header_inicio h1 {
   height: 150px;
   border-radius: 5px;
   margin: 10px auto;
+  display: flex;
+  justify-content: center;
 }
 .registrarse form .registro_contendor2 .chequeo {
   display: flex;
   padding: 0 auto;
   justify-content: center;
-  max-width: 90%;
+  max-width: 95%;
   font-size: 14px;
   text-align: none;
+}
+.registrarse form .registro_contendor2 .chequeo .check, .registrarse form .registro_contendor2 .chequeo p {
+  margin: auto 10px;
 }
 .registrarse form .registro_contendor2 .enviar_pedido {
   display: flex;
   justify-content: space-evenly;
   margin: 0 auto;
   margin: 10px 0 0 0;
-}
-.registrarse form .registro_contendor2 .enviar_pedido .check {
-  margin: auto 10px;
 }
 .registrarse form .registro_contendor2 .enviar_pedido .enviar_reset {
   width: 45%;
@@ -642,11 +644,14 @@ header .header_inicio h1 {
   border-radius: 5px;
   margin: 10px auto;
 }
-.carrito div .carrito_contendor_inferior div div {
-  width: 170px;
+.carrito div .carrito_contendor_inferior .tipo_envio div {
+  width: 160px;
   margin: 0 auto;
   display: flex;
   justify-content: space-evenly;
+}
+.carrito div .carrito_contendor_inferior .tipo_envio div input {
+  margin: 0 0 0 2px;
 }
 .carrito div .carrito_contendor_inferior .enviar_pedido {
   display: flex;
@@ -656,7 +661,7 @@ header .header_inicio h1 {
 }
 .carrito div .carrito_contendor_inferior .enviar_pedido .enviar_reset {
   width: 45%;
-  max-width: 150px;
+  max-width: 160px;
   height: 30px;
   border-radius: 5px;
 }
