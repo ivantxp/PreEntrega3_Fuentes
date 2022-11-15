@@ -10,10 +10,15 @@
     div{
         .carrito_contendor_superior{
             .listado_compra{
+                height: 200px;
+                margin: 10px 0;
                 border: 1px solid variables.$color_borde_carrito;
                 border-radius: 10px;
                 background-color: variables.$color_fondo_carrito;
-                list-style-type :disc;
+                p{
+                    margin: 5px 10px;
+                    color:variables.$color_listado_compra;
+                }
             }
             h3{
                 border: 1px solid variables.$color_borde_carrito;
