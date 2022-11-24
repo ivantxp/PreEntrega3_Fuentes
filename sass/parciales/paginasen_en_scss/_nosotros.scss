@@ -1,13 +1,15 @@
+@use '../generales/variables';
+
 .formato_periodico{
     padding: 10px ;
     text-align: justify;
-    background-color: rgba(255, 255, 255, 0.314);
+    background-color: variables.$color_fondo_periodico;
+    border-radius: 5px;
 }
 
 .comiensa,.segunda{
     width: 90%;
     max-width: 1200px;
-   
     img{
         border-radius: 10px;
         /* width: 100%; */
@@ -27,7 +29,5 @@
             width: 800px;
             height: 700px;
         }
-
-      
     }
 }
