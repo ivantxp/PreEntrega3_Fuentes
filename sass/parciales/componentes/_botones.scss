@@ -7,7 +7,6 @@
     text-align: center;
     border-radius: 10px;
     font-weight:bold;
-    transform: translate(0,-20px);
     cursor: pointer;
     box-shadow: none;
     transition:     
@@ -27,28 +26,13 @@
     background-color: map-get(variables.$boton_color, fondo);
     &:hover {
         @extend %color_boton_hover;
-        transform: translate(0,-24px);
+        transform: translate(0,-4px);
     }
     &:active{
-        transform: translate(0,-20px);
+        transform: translate(0,-2px);
         box-shadow: none;
         @extend %color_boton_active;
     }
-        .precio{
-       transform: translate(0,-20px);
-        
-        padding: 5px 0;
-        width: 150px;
-        text-align: center;
-        border-radius: 0 0 10px 10px;
-        background: linear-gradient(
-    0deg,
-    rgba(255, 232, 16, 1) 0%,
-    rgba(255, 253, 201, 1) 51%,
-    rgba(255, 230, 0, 1) 100%
-  );
-  background-blend-mode: normal;
-    } 
 }
 
 .boton_enviar{
