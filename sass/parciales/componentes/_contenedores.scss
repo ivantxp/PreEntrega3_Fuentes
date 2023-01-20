@@ -4,10 +4,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 10px 0;
-    div{
-        background-color: red;
+    max-width: 250px;
+    margin: 10px auto; 
+    padding: 15px 0 ;
 
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow:  3px 3px 5px black;
+    div{
         .comida{
             border-radius: 10px 10px 0 0 ;
             font-weight:bold;
@@ -23,7 +27,7 @@
                 background-color: variables.$color_info;
                 opacity: 0.8;
                 height: 35px;
-                width: 60px;
+                width: 50px;
                 text-align: center;
                 border-radius:  0  0 5px 5px;
                 transition: width 30ms ease 0s;
@@ -47,7 +51,7 @@
                     display: block;
                     color: rgb(0, 0, 0);
                     border-radius: 0 5px 0 0;
-                    width: 230px; 
+                    width: 210px; 
                 }
             }
             &:active .informacion_milanesa{
@@ -75,7 +79,7 @@
             .informacion_milanesa{/*deberia in*/
                 display: none;
                 position: absolute;
-                width: 230px;
+                width: 210px;
                 padding: 0 5px 0 5px;
                 background-color: variables.$color_info;
                 margin: 36px 0 0 0;
@@ -89,7 +93,12 @@
     }
     img{
         border-radius: 0 10px 10px;
-        width: 230px;
-        height: 200px;
+        width: 210px;
+        height: 190px;
+    }
+    .precio{
+        margin: 10px auto;
+        width: 200px;
+        text-align: center;
     }    
 }
