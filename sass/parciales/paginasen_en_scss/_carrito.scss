@@ -1,34 +1,34 @@
-@use '../generales/variables';
+@use "../generales/variables";
 /* .carrito{
     margin: 0 auto;
  */
 
-.carrito{
+.carrito {
     width: 90%;
     max-width: 850px;
-    border-radius:5px;
-    div{
-        .carrito_contendor_superior{
-            .listado_compra{
+    border-radius: 5px;
+    div {
+        .carrito_contendor_superior {
+            .listado_compra {
                 height: 200px;
                 margin: 10px 0;
                 border: 1px solid variables.$color_borde_carrito;
                 border-radius: 10px;
                 background-color: variables.$color_fondo_carrito;
-                p{
+                p {
                     margin: 5px 10px;
-                    color:variables.$color_listado_compra;
+                    color: variables.$color_listado_compra;
                 }
             }
-            h3{
+            h3 {
                 border: 1px solid variables.$color_borde_carrito;
                 background-color: variables.$color_fondo_carrito;
                 border-radius: 10px;
                 padding: 5px 10px;
             }
         }
-        .carrito_contendor_inferior{
-            .comentario_compra{
+        .carrito_contendor_inferior {
+            .comentario_compra {
                 display: flex;
                 justify-content: center;
                 resize: none;
@@ -36,30 +36,30 @@
                 height: 100px;
                 border-radius: 5px;
                 margin: 10px auto;
-            }  
-            .tipo_envio{
-                div{
+            }
+            .tipo_envio {
+                div {
                     width: 160px;
                     margin: 0 auto;
                     display: flex;
                     justify-content: space-evenly;
-                    input{
-                        margin:0 0 0 2px; 
+                    input {
+                        margin: 0 0 0 2px;
                     }
                 }
             }
-            .enviar_pedido{
+            .enviar_pedido {
                 display: flex;
                 justify-content: space-evenly;
                 margin: 0 auto;
                 margin: 10px 0 0 0;
-                .enviar_reset{
+                .enviar_reset {
                     width: 45%;
                     max-width: 160px;
                     height: 30px;
-                    border-radius:5px;
+                    border-radius: 5px;
                 }
             }
         }
-    }   
+    }
 }

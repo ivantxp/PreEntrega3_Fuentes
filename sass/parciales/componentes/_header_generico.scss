@@ -1,69 +1,76 @@
-@use '../generales/variables';
-@use '../generales/extend';
+@use "../generales/variables";
+@use "../generales/extend";
 
-.header_generico{ /*contenido total del header*/
+.header_generico {
+    /*contenido total del header*/
     position: sticky;
-    top:0;
-    
+    top: 0;
+
     display: flex;
     flex-direction: column;
-    justify-content: space-between; 
+    justify-content: space-between;
     z-index: 100;
-   background-image: url(../imagenes/fondo.jpg);
+    background-image: url(../imagenes/fondo.jpg);
     background-repeat: repeat;
     background-size: 200px;
     font-size: 16px;
-    .header_superior{/*header sin la barra de navegacion*/
+    .header_superior {
+        /*header sin la barra de navegacion*/
         display: flex;
         justify-content: space-between;
         margin: 0 5px;
-        .regulacion_titulo{
-            display :flex;
+        .regulacion_titulo {
+            display: flex;
             align-items: flex-end;
         }
-        img{
-            &:hover{
+        img {
+            &:hover {
                 box-shadow: rgb(0, 0, 0) 0 3px 5px;
                 transform: translate(0, -2px);
             }
         }
-        img{
-            &:active{
+        img {
+            &:active {
                 @extend %active_carrito;
                 transform: translate(0, 0);
-            }    
+            }
         }
     }
-    .loguin_registro{
+    .loguin_registro {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        font-size: 17px ;
-        font-family: map-get(variables.$estilo_letra, loguin);  
-        font-weight: bold; 
+        font-size: 17px;
+        font-family: map-get(variables.$estilo_letra, loguin);
+        font-weight: bold;
     }
-    .barras{ /*todo lo relacionado con barras de navegacion*/
+    .barras {
+        /*todo lo relacionado con barras de navegacion*/
         background-blend-mode: normal;
         font-size: 22px;
         @extend %color_navvarb;
-        div{   
-            .barra_movil{/*barra para vista movil y tablet*/
-                width:min-content;
+        div {
+            .barra_movil {
+                /*barra para vista movil y tablet*/
+                width: min-content;
                 height: 40px;
                 transition: 150ms;
-                .desplegable{
+                .desplegable {
                     display: none;
                     position: absolute;
                     cursor: pointer;
-                    padding: 0 5px;    
+                    padding: 0 5px;
                 }
-                &:hover .desplegable{
+                &:hover .desplegable {
                     display: block;
                     opacity: 1;
-                    -webkit-animation: scale-in-ver-top 150ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-                    animation: scale-in-ver-top 150ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                    -webkit-animation: scale-in-ver-top 150ms
+                        cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+                    animation: scale-in-ver-top 150ms
+                        cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
                 }
-                @keyframes scale-in-ver-top { /*animacion de desplegable*/
+                @keyframes scale-in-ver-top {
+                    /*animacion de desplegable*/
                     0% {
                         -webkit-transform: scaleY(0);
                         transform: scaleY(0);
@@ -74,63 +81,64 @@
                     100% {
                         -webkit-transform: scaleY(1);
                         transform: scaleY(1);
-                        -webkit-transform-origin: 100% 0%;  
+                        -webkit-transform-origin: 100% 0%;
                         transform-origin: 100% 0%;
                         opacity: 1;
                     }
                 }
-                .menu{
-                    display:flex;
+                .menu {
+                    display: flex;
                     padding: 5px 10px;
                     @extend %color_menu;
                     height: 100%;
-                } 
-                div{
-                    .pagina{
+                }
+                div {
+                    .pagina {
                         padding: 5px 0 0 5px;
                         color: variables.$pagina_seleccionada_letra;
                         text-shadow: 1px 1px 2px black;
-                        &:hover{
-                            color:map-get(variables.$titulo_color, hover);
-                        }   
-                        &:active{
-                            color:map-get(variables.$titulo_color, active);
-                        }    
+                        &:hover {
+                            color: map-get(variables.$titulo_color, hover);
+                        }
+                        &:active {
+                            color: map-get(variables.$titulo_color, active);
+                        }
                     }
                 }
-            }   
+            }
         }
-        .barra_movil_animacion_a:hover{
-            cursor:pointer;
+        .barra_movil_animacion_a:hover {
+            cursor: pointer;
             height: 185px;
-        } 
-        .barra_movil_animacion_b:hover{
-            cursor:pointer;
+        }
+        .barra_movil_animacion_b:hover {
+            cursor: pointer;
             height: 210px;
         }
-        .barra_desktop {/*barra para vista desktop*/
+        .barra_desktop {
+            /*barra para vista desktop*/
             justify-content: space-around;
             @extend %color_navvarb;
             background-blend-mode: normal;
             height: 40px;
             padding: 0;
-            li{
+            li {
                 width: 20%;
                 text-align: center;
-                border-radius: 10px 10px 0 0;  
-                margin: 4px 0 0 0; 
+                border-radius: 10px 10px 0 0;
+                margin: 4px 0 0 0;
             }
-            .pestaña{
-                &:hover{
+            .pestaña {
+                &:hover {
                     @extend %pestaña_hover;
                 }
             }
-            .seleccionado{ 
+            .seleccionado {
                 background-color: variables.$color_seleccionado;
             }
-            a{
+            a {
                 align-self: stretch;
             }
         }
-    }  
+    }
 }

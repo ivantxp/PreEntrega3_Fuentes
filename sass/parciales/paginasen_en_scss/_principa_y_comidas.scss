@@ -1,24 +1,23 @@
-
-.promo_take{
+.promo_take {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.milanesa_semana{
+.milanesa_semana {
     display: flex;
     align-items: center;
-    flex-direction:column;
-}  
+    flex-direction: column;
+}
 
-.milanesa_semana{
-    h2{
+.milanesa_semana {
+    h2 {
         font-size: 20px;
         text-align: center;
     }
 }
 
-.milanesa_semana_contenedor{ 
-    width: 85%; 
-    max-width: 380px; 
+.milanesa_semana_contenedor {
+    width: 85%;
+    max-width: 380px;
 }

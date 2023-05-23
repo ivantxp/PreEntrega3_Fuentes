@@ -1,12 +1,11 @@
-
-.centrado_paquete{
+.centrado_paquete {
     display: flex;
     flex-direction: column;
     align-items: center;
-    .ingresar_margen{
-        margin: 100px auto 0; 
+    .ingresar_margen {
+        margin: 100px auto 0;
     }
-    .caja_ingresar{
+    .caja_ingresar {
         padding: 50px 20px 40px 20px;
-    }   
+    }
 }

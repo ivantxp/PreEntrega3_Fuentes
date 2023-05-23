@@ -1,44 +1,45 @@
-@use '../generales/variables';
-*{ 
+@use "../generales/variables";
+* {
     margin: 0;
     padding: 0;
 }
 
-@media screen and (min-width:0){ /*vista movil*/
+@media screen and (min-width: 0) {
+    /*vista movil*/
     .barra_desktop {
         display: none;
     }
-    .regulacion_tamaño{
+    .regulacion_tamaño {
         min-width: 288px;
-        width: 90%; 
-        max-width: 380px; 
+        width: 90%;
+        max-width: 380px;
     }
-    .titulo_{
+    .titulo_ {
         display: flex;
     }
-    .barra_movil{
+    .barra_movil {
         display: flex;
     }
-    .titulo_contendor{
+    .titulo_contendor {
         width: 215px;
     }
-    .titulo_contendor h1{
+    .titulo_contendor h1 {
         font-size: 28px;
     }
-    .header_inicio{
+    .header_inicio {
         padding: 100px 0 10px 0;
-        h1{
-        font-size: 35px;
+        h1 {
+            font-size: 35px;
         }
     }
-    .img_inicio{
+    .img_inicio {
         width: 250px;
-    } 
-    .icono_carrito{
-        transform: translate(-45px,-5px);
     }
-    .barras{
-        height: min-content;  /*EVITANDO ESTILO DE BOOTSTRAP*/
+    .icono_carrito {
+        transform: translate(-45px, -5px);
+    }
+    .barras {
+        height: min-content; /*EVITANDO ESTILO DE BOOTSTRAP*/
     }
     .boton_entrar {
         padding: 5px 15px;
@@ -47,39 +48,40 @@
     }
 }
 
-@media screen and (min-width:576px){/*para tablet*/
-    .regulacion_tamaño{
-        width:90%;
+@media screen and (min-width: 576px) {
+    /*para tablet*/
+    .regulacion_tamaño {
+        width: 90%;
         max-width: 600px;
     }
-    .titulo{
+    .titulo {
         display: flex;
     }
-    .titulo_flex{
+    .titulo_flex {
         display: flex;
     }
-    .titulo_contendor{
+    .titulo_contendor {
         width: 80%;
-        margin: 10px
+        margin: 10px;
     }
-    .titulo_contendor h1{
+    .titulo_contendor h1 {
         font-size: 35px;
     }
-    .header_inicio{
+    .header_inicio {
         padding: 50px 0 5px 0;
-        h1{
-        font-size: 45px;
+        h1 {
+            font-size: 45px;
         }
     }
-    
-    .img_inicio{
+
+    .img_inicio {
         width: 450px;
     }
-    .icono_carrito{
-        transform: translate(5px,-8px);
+    .icono_carrito {
+        transform: translate(5px, -8px);
     }
-    .barras{
-        height: min-content;  /*EVITANDO ESTILO DE BOOTSTRAP*/
+    .barras {
+        height: min-content; /*EVITANDO ESTILO DE BOOTSTRAP*/
     }
     .boton_entrar {
         padding: 10px 20px;
@@ -88,39 +90,41 @@
     }
 }
 
-@media screen and (min-width:992px){/*para desktop*/
-    .regulacion_tamaño{
+@media screen and (min-width: 992px) {
+    /*para desktop*/
+    .regulacion_tamaño {
         width: 100%;
         max-width: 900px;
     }
-    .barra_desktop{
+    .barra_desktop {
         display: flex;
     }
-    .barra_movil{display: none;
+    .barra_movil {
+        display: none;
     }
-    .titulo_contendor{
+    .titulo_contendor {
         width: 700px;
         font-size: 30px;
         margin: 10px;
     }
-    .titulo_contendor h1{
+    .titulo_contendor h1 {
         font-size: 45px;
     }
-    .barras{
+    .barras {
         background: transparent;
     }
-    
-    .header_inicio{
-        padding: 0 ;
-        h1{
-        font-size: 50px;
+
+    .header_inicio {
+        padding: 0;
+        h1 {
+            font-size: 50px;
         }
     }
-    .img_inicio{
+    .img_inicio {
         width: 600px;
     }
-    .barras{
-        height: 40px;  /*EVITANDO ESTILO DE BOOTSTRAP*/
+    .barras {
+        height: 40px; /*EVITANDO ESTILO DE BOOTSTRAP*/
     }
     .boton_entrar {
         padding: 5px 25px;
@@ -129,16 +133,17 @@
     }
 }
 
-@media screen and (min-width:1200px){/*para desktop grande*/
-    .regulacion_tamaño{
+@media screen and (min-width: 1200px) {
+    /*para desktop grande*/
+    .regulacion_tamaño {
         width: 90%;
         max-width: 1200px;
     }
 }
 
-.grilla{
+.grilla {
     display: grid;
-    grid-template-columns:  1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
 }

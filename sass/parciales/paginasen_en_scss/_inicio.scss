@@ -1,23 +1,22 @@
-@use '../generales/variables';
+@use "../generales/variables";
 
-header{ 
-    .header_inicio {   
+header {
+    .header_inicio {
         text-align: center;
         display: block;
         margin: 3% 0 2% 0;
-        h1{
+        h1 {
             font-family: map-get(variables.$estilo_letra, titulos);
         }
     }
 }
 .main_inicio {
-    div{ 
-    display: flex;
-    justify-content: center;
-        .img_inicio{ 
+    div {
+        display: flex;
+        justify-content: center;
+        .img_inicio {
             border-radius: 10px;
-            justify-content: center;   
-        } 
+            justify-content: center;
+        }
     }
 }
-    

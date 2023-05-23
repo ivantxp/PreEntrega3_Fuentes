@@ -1,29 +1,26 @@
-
-
 /*---confuguraciones generales---------------*/
-@use './parciales/generales/area_trabajo';
+@use "./parciales/generales/area_trabajo";
 /*---header para todo menos index-------*/
-@use './parciales/componentes/header_generico.scss';
+@use "./parciales/componentes/header_generico.scss";
 /*---Footer-------*/
-@use './parciales/componentes/footer';
+@use "./parciales/componentes/footer";
 /*---componentes-------------------------------------*/
-@use './parciales/componentes/contenedores';
-@use './parciales/componentes/botones';
-@use './parciales/componentes/bordes';
+@use "./parciales/componentes/contenedores";
+@use "./parciales/componentes/botones";
+@use "./parciales/componentes/bordes";
 
 /*---pagina de indicio(index)------------*/
-@use './parciales/paginasen_en_scss/inicio.scss';
+@use "./parciales/paginasen_en_scss/inicio.scss";
 /*---pagina-principal y pagina comida/pedidos-----------------------*/
-@use './parciales/paginasen_en_scss/principa_y_comidas';
+@use "./parciales/paginasen_en_scss/principa_y_comidas";
 /*---nosotros----------*/
-@use './parciales/paginasen_en_scss/nosotros.scss';
+@use "./parciales/paginasen_en_scss/nosotros.scss";
 /*---registrarse------*/
-@use './parciales/paginasen_en_scss/registrarse';
+@use "./parciales/paginasen_en_scss/registrarse";
 /*---ingresar-------------*/
-@use './parciales/paginasen_en_scss/ingresar';
+@use "./parciales/paginasen_en_scss/ingresar";
 /*---pagina carrito---*/
-@use './parciales/paginasen_en_scss/carrito';
+@use "./parciales/paginasen_en_scss/carrito";
 
 /*---Estilos gernerales-------------*/
-@use './parciales/generales/globales';
-
+@use "./parciales/generales/globales";

@@ -1,23 +1,23 @@
-@use '../generales/variables';
+@use "../generales/variables";
 
-.redes_sociales{
+.redes_sociales {
     display: flex;
-    justify-content:center;  
-    background-color: map-get(variables.$footer_color, general); 
+    justify-content: center;
+    background-color: map-get(variables.$footer_color, general);
     align-items: flex-end;
-    margin: 15px 0 0 0;  
-    img{ 
+    margin: 15px 0 0 0;
+    img {
         border: 2px solid map-get(variables.$footer_color, general);
-        &:hover{
+        &:hover {
             background-color: map-get(variables.$footer_color, hover);
             border: 2px solid black;
             box-shadow: map-get(variables.$footer_color, sombra) 0 3px 5px;
             transform: translate(0, -2px);
         }
-        &:active{
+        &:active {
             background-color: map-get(variables.$footer_color, active);
             box-shadow: map-get(variables.$footer_color, sombra) 0 3px 5px;
             transform: translate(0, 0);
         }
     }
-} 
+}

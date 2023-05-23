@@ -1,56 +1,48 @@
-
-.registrarse{
+.registrarse {
     width: 90%;
     max-width: 650px;
-    form{
-        .registro_contendor1{
-            .formato_input{ 
+    form {
+        .registro_contendor1 {
+            .formato_input {
                 width: 75%;
                 max-width: 350px;
-                border-radius:5px;
+                border-radius: 5px;
             }
         }
-        .registro_contendor2{
-            .comentario{
+        .registro_contendor2 {
+            .comentario {
                 resize: none;
                 width: 90%;
                 height: 150px;
                 border-radius: 5px;
-                margin: 10px auto;    
+                margin: 10px auto;
                 display: flex;
                 justify-content: center;
-            }   
-            .chequeo{
+            }
+            .chequeo {
                 display: flex;
                 padding: 0 auto;
                 justify-content: center;
                 max-width: 95%;
                 font-size: 14px;
                 text-align: none;
-                .check , p{
+                .check,
+                p {
                     margin: auto 10px;
                 }
             }
-            .enviar_pedido{
+            .enviar_pedido {
                 display: flex;
                 justify-content: space-evenly;
                 margin: 0 auto;
                 margin: 10px 0 0 0;
-                .enviar_reset{
+                .enviar_reset {
                     width: 45%;
                     max-width: 150px;
                     height: 30px;
-                    border-radius:5px;
+                    border-radius: 5px;
                 }
             }
         }
     }
 }
-
-
-
-
-
-
-
-

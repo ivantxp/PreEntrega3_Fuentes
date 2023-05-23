@@ -1,77 +1,80 @@
-@use '../generales/variables';
+@use "../generales/variables";
 
-body{
+body {
     background-image: url(../imagenes/fondococina.jpg);
-    background-repeat:no-repeat;
-    background-size:cover ;
+    background-repeat: no-repeat;
+    background-size: cover;
     overflow-y: none;
 }
 
-main{
+main {
     width: 100%;
 }
 
-a{
+a {
     text-decoration: none;
-    color:  map-get(variables.$titulo_color, general);
+    color: map-get(variables.$titulo_color, general);
 }
 
-h2{
+h2 {
     font-size: 40px;
 }
 
-ul, h3,.titulo_menu{
+ul,
+h3,
+.titulo_menu {
     list-style: none;
     font-family: map-get(variables.$estilo_letra, titulos);
     font-size: 22px;
 }
 
-p{
+p {
     font-family: map-get(variables.$estilo_letra, parrafos);
     font-weight: 600;
     text-align: justify;
 }
 
-.titulo_nosotros{
+.titulo_nosotros {
     color: map-get(variables.$titulo_color, nosotros);
     margin: 20px 0 0 0;
     font-family: map-get(variables.$estilo_letra, titulos);
     font-size: 20px;
 }
 
-.centrado{
-    margin: 0 auto; 
+.centrado {
+    margin: 0 auto;
 }
 
-.titulo{
-    color:  map-get(variables.$titulo_color, general);
-    font-family:map-get(variables.$estilo_letra, titulos);
+.titulo {
+    color: map-get(variables.$titulo_color, general);
+    font-family: map-get(variables.$estilo_letra, titulos);
 }
 
-.borde_titulo_centrado{
+.borde_titulo_centrado {
     transform: translate(0, 25px);
 }
 
-.titulo_animacion{
+.titulo_animacion {
     transition: text-shadow 100ms ease 0s, color 100ms ease 0s;
-    &:hover{
+    &:hover {
         color: map-get(variables.$titulo_color, hover);
         text-shadow: 1px 1px 2px black;
-        text-decoration-line:none ; /*EVITANDO ESTILO DE BOOTSTRAP*/
+        text-decoration-line: none; /*EVITANDO ESTILO DE BOOTSTRAP*/
     }
-    &:active{
+    &:active {
         color: map-get(variables.$titulo_color, active);
         text-shadow: none;
     }
 }
 
-.margen_titulo{
-    margin:  20px 0 0 0;
+.margen_titulo {
+    margin: 20px 0 0 0;
 }
 
-.iconos{
+.iconos {
     height: 40px;
     border-radius: 5px;
     padding: 5px;
-    transition: all 100ms cubic-bezier(0.175, 0.885, 0.32, 1.275), background-color 300ms ;
+    transition: all 100ms cubic-bezier(0.175, 0.885, 0.32, 1.275),
+        background-color 300ms;
 }

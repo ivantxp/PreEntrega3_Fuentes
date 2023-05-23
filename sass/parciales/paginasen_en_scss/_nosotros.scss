@@ -1,31 +1,36 @@
-@use '../generales/variables';
+@use "../generales/variables";
 
-.formato_periodico{
-    padding: 10px ;
+.formato_periodico {
+    padding: 10px;
     text-align: justify;
     background-color: variables.$color_fondo_periodico;
     border-radius: 5px;
 }
 
-.comiensa,.segunda{
+.comiensa,
+.segunda {
     width: 90%;
     max-width: 1200px;
-    img{
+    img {
         border-radius: 10px;
         /* width: 100%; */
-        @media screen and (min-width:320px){ /*vista movil*/
+        @media screen and (min-width: 320px) {
+            /*vista movil*/
             width: 230px;
             height: 200px;
         }
-        @media screen and (min-width:576px){ /*vista movil*/
+        @media screen and (min-width: 576px) {
+            /*vista movil*/
             width: 400px;
             height: 350px;
         }
-        @media screen and (min-width:768px){ /*vista movil*/
+        @media screen and (min-width: 768px) {
+            /*vista movil*/
             width: 700px;
             height: 450px;
         }
-        @media screen and (min-width:992px){ /*vista movil*/
+        @media screen and (min-width: 992px) {
+            /*vista movil*/
             width: 800px;
             height: 700px;
         }
